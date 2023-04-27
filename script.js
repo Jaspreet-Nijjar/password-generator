@@ -101,7 +101,7 @@ button.addEventListener('click', generatePassword);
 function generatePassword() {
   output.textContent = '';
 
-  let passLength = passwordLength.value;
+  let passLength = +passwordLength.value;
 
   for (let i = 0; i < passLength; i++) {
     if (passLength > 15) {
@@ -110,6 +110,10 @@ function generatePassword() {
       let random = Math.floor(Math.random() * characters.length);
       output.textContent += characters[random];
     }
+  }
+
+  if (passLength <= 3) {
+    output.textContent = 'Password must be more than 3 characters';
   }
 
   output.style.display = 'block';
