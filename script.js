@@ -104,8 +104,12 @@ function generatePassword() {
   let passLength = passwordLength.value;
 
   for (let i = 0; i < passLength; i++) {
-    let random = Math.floor(Math.random() * characters.length);
-    output.textContent += characters[random];
+    if (passLength > 15) {
+      output.textContent = 'Password must be 15 characters or less';
+    } else {
+      let random = Math.floor(Math.random() * characters.length);
+      output.textContent += characters[random];
+    }
   }
 
   output.style.display = 'block';
