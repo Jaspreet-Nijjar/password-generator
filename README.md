@@ -1,5 +1,5 @@
 # Password Generator
-[Live Demo](jn-password-generator.netlify.app)
+[Live Demo](https://jn-password-generator.netlify.app/)
 
 ![Password Generator](./project-image.png)
 
