@@ -15,21 +15,17 @@ body {
   font-family: Quicksand, 'sans-serif';
   display: flex;
   justify-content: center;
-  align-items: center;
   height: 100vh;
+  align-items: center;
   background-color: var(--bg);
 }
 
 .container {
   background-color: var(--container);
-  padding: 40px;
-  max-width: 90%;
+  padding: 25px 0;
   color: white;
   border-radius: 15px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 90%;
+  width: 90%;
 }
 
 h1 {
@@ -84,4 +80,10 @@ span {
   flex-direction: column;
   margin: 20px;
   align-items: center;
+}
+
+@media screen and (min-width: 650px) {
+  body {
+    margin: 100px;
+  }
 }
